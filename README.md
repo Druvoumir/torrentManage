@@ -6,7 +6,7 @@ The purpose of this script is to help to identify the torrents that are no more 
 * Respect tracker rules (minimum seed time)
 * Do not penalize torrents with few seeders or with leechers
 * Do not penalize torrents with activity
-* help maintain a ratio (the required ratio decreases with the number of seeders and time following a gaussian curve $\f\relax{x, s} = A \cdot e^{-((B \cdot s + C)\cdot x)^2}$ x is the number of days past the minimum time to seed and s the number of seeders)
+* help maintain a ratio (the required ratio decreases with the number of seeders and time following a gaussian curve $f(x, s) = A \cdot e^{-((B \cdot s + C)\cdot x)^2}$ x is the number of days past the minimum time to seed and s the number of seeders)
 
 The configuration is a json file (default `config.json` in the working directory but the path can be chosen with the `CONFIG_PATH` environment variable)
 
